@@ -8,10 +8,9 @@
     body { margin:0; font-family: Arial, sans-serif; background:#0b0b0b; color:#fff; }
     header { text-align:center; padding:30px 20px; background:linear-gradient(90deg,#00ffcc,#0077ff); color:#000; }
     header h1 { margin:0; font-size:32px; }
-    header p { margin:5px 0 0; font-weight:bold; }
 
     .section { padding:30px 20px; }
-    .section h2 { color:#00ffcc; margin-bottom:20px; }
+    .section h2 { color:#00ffcc; }
 
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
 
@@ -21,12 +20,7 @@
       border-radius:12px;
       text-align:center;
       box-shadow:0 0 10px rgba(0,255,204,0.2);
-      transition:0.3s;
     }
-    .card:hover { transform:scale(1.05); box-shadow:0 0 20px rgba(0,255,204,0.5); }
-
-    .card h3 { color:#00ffcc; }
-    .price { font-size:20px; margin:10px 0; }
 
     .btn {
       display:inline-block;
@@ -36,22 +30,23 @@
       text-decoration:none;
       border-radius:6px;
       font-weight:bold;
+      margin-top:10px;
     }
 
-    footer {
-      text-align:center;
-      padding:20px;
-      background:#111;
-      font-size:14px;
+    .pix-box {
+      margin-top:10px;
+      font-size:12px;
       color:#aaa;
     }
+
+    footer { text-align:center; padding:20px; background:#111; color:#aaa; }
   </style>
 </head>
 <body>
 
 <header>
   <h1>🔊 GB DO GRAVE</h1>
-  <p>Graves extremos • Playlists exclusivas • Teste de som</p>
+  <p>Compre graves extremos via Pix</p>
 </header>
 
 <div class="section">
@@ -60,14 +55,9 @@
     <div class="card">
       <h3>Grave Insano V1</h3>
       <p>30 músicas com grave absurdo</p>
-      <div class="price">R$ 7,90</div>
-      <a href="#" class="btn">Comprar</a>
-    </div>
-    <div class="card">
-      <h3>Grave Proibido</h3>
-      <p>Teste extremo para fones</p>
-      <div class="price">R$ 9,90</div>
-      <a href="#" class="btn">Comprar</a>
+      <strong>R$ 7,90</strong>
+      <a class="btn" href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20Grave%20Insano%20V1">Comprar via WhatsApp</a>
+      <div class="pix-box">Pix: SUA_CHAVE_PIX</div>
     </div>
   </div>
 </div>
@@ -77,15 +67,10 @@
   <div class="grid">
     <div class="card">
       <h3>Teste Bass Boost</h3>
-      <p>Áudios para testar qualquer fone</p>
-      <div class="price">R$ 6,90</div>
-      <a href="#" class="btn">Comprar</a>
-    </div>
-    <div class="card">
-      <h3>Desafio do Grave</h3>
-      <p>Veja se seu fone aguenta</p>
-      <div class="price">R$ 8,90</div>
-      <a href="#" class="btn">Comprar</a>
+      <p>Teste extremo de fones</p>
+      <strong>R$ 6,90</strong>
+      <a class="btn" href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20Teste%20Bass%20Boost">Comprar via WhatsApp</a>
+      <div class="pix-box">Pix: SUA_CHAVE_PIX</div>
     </div>
   </div>
 </div>
@@ -94,16 +79,11 @@
   <h2>🚗 Automotivo</h2>
   <div class="grid">
     <div class="card">
-      <h3>Som de Porta Malas</h3>
-      <p>Graves fortes pra carro</p>
-      <div class="price">R$ 10,90</div>
-      <a href="#" class="btn">Comprar</a>
-    </div>
-    <div class="card">
       <h3>Grave Automotivo Pro</h3>
-      <p>Playlist profissional</p>
-      <div class="price">R$ 14,90</div>
-      <a href="#" class="btn">Comprar</a>
+      <p>Som pesado pra carro</p>
+      <strong>R$ 14,90</strong>
+      <a class="btn" href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20Grave%20Automotivo%20Pro">Comprar via WhatsApp</a>
+      <div class="pix-box">Pix: SUA_CHAVE_PIX</div>
     </div>
   </div>
 </div>
@@ -113,15 +93,16 @@
   <div class="grid">
     <div class="card">
       <h3>Grupo VIP</h3>
-      <p>Novos graves toda semana</p>
-      <div class="price">R$ 9,90/mês</div>
-      <a href="#" class="btn">Entrar</a>
+      <p>Receba novos graves toda semana</p>
+      <strong>R$ 9,90/mês</strong>
+      <a class="btn" href="https://wa.me/SEUNUMERO?text=Quero%20entrar%20no%20VIP">Entrar via WhatsApp</a>
+      <div class="pix-box">Pix: SUA_CHAVE_PIX</div>
     </div>
   </div>
 </div>
 
 <footer>
-  © 2026 GB do Grave - Todos os direitos reservados
+  Após pagamento via Pix, envie o comprovante no WhatsApp para receber na hora 🔊
 </footer>
 
 </body>
