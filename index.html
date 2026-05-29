@@ -115,8 +115,14 @@
       <a class="btn" href="https://pagamento-link-aqui.com" target="_blank">💰 Gerar Pix</a>
       <div id="pixArea" style="display:none; margin-top:15px;">
         <p>Escaneie o QR Code:</p>
-        <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=PIX: 41997112871 VALOR:20.00" alt="QR Code Pix">
-        <p class="pix-box">Chave Pix: 41997112871</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020126580014BR.GOV.BCB.PIX013641997112871520400005303986540520.005802BR5920GB%20DO%20GRAVE6009SAO%20PAULO62070503***6304ABCD" alt="QR Code Pix">
+        <p class="pix-box">Chave Pix: 41997112871<br>Valor: R$ 20,00</p>
+        <button class="btn" onclick="copiarPix()">Copiar código Pix</button>
+        <textarea id="pixCode" style="position:absolute;left:-9999px;">00020126580014BR.GOV.BCB.PIX013641997112871520400005303986540520.005802BR5920GB DO GRAVE6009SAO PAULO62070503***6304ABCD</textarea>
+        <script>
+        function copiarPix(){
+          var copyText = document.getElementById("pixCode");
+          c
       </div>
       <script>
         document.querySelector('.btn').addEventListener('click', function(e){
